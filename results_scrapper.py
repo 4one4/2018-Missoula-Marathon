@@ -5,7 +5,7 @@ import pandas as pd
 
 def download_results(url, race):
     
-    df_columns = ['Place','Name','City','Bib_No','Age','Gender','Age_Group','Chip_Time','Gun_Time','Chip_Diff','Pace']
+    df_columns = ['Place','Name','City','Bib_No','Age','Gender','Age_Group','Chip_Time','Gun_Time','Chip_Diff','Pace', 'Race']
     
     df_rows = []
     
@@ -36,7 +36,8 @@ def download_results(url, race):
                       cells[7].text,
                       cells[8].text,
                       cells[9].text,
-                      cells[10].text]
+                      cells[10].text,
+                      race]
             df_rows.append(result)
     df = pd.DataFrame(df_rows, columns=df_columns)
     return df
