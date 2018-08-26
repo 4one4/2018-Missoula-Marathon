@@ -11,4 +11,3 @@ I'm not expecting earth shattering results here. Mostly just looking for a way t
 - Assess the data. Look through the resulting files for potential insights or issues.
 - Clean the data. Clean up any problems in the data (missing fields, bad data types, etc...)
 - Create features. If necessary, create new fields to aide in analysis.
-- Present findings. I want to create a somewhat technical summary of my findings as well as a visualization or two (Tableau public?).
